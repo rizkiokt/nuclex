@@ -11,6 +11,10 @@ import tiktoken
 from dataclasses import dataclass
 from collections import defaultdict
 
+class VectorStoreError(Exception):
+    """Custom exception class for vector store related errors"""
+    pass
+
 @dataclass
 class Document:
     content: str
